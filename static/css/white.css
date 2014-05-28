@@ -137,12 +137,6 @@
 
     ul.dates a:hover, ul.dates a:hover .date, ul.counts a:hover, ul.counts a:hover .count, ul.blogroll a:hover, ul.pages a:hover, .widget ul a:hover, a.readmore:hover, .links:hover{ color:#000; }
 
-    /*#footer a, #footer p.attributes a{
-        color:#333;
-    }*/
-
-    #footer a:hover, #footer p.attributes a:hover{ color:#fff; }
-
 
     /* Images */
 

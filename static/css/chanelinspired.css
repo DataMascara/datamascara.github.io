@@ -15,13 +15,6 @@ Tags: black, dark, custom-colors, theme-options, two-columns, fixed-width, rtl-l
 -----------------------------------------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'SFNewRepublic';
-  font-style: normal;
-  font-weight: 400;
-  src: local('SFNewRepublic'), url(../fonts/SFNewRepublic.ttf) format('ttf');
-}
-
-@font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -45,7 +38,7 @@ Tags: black, dark, custom-colors, theme-options, two-columns, fixed-width, rtl-l
 body{
 	align: center;
 	background-color: #F2F2F2;
-	font-family:"SFNewRepublic", "Nunito", Arial, sans-serif;
+	font-family:"Quicksand", sans-serif;
 	font-size: 13px;
 	color:#444;
 }
@@ -198,57 +191,6 @@ a img{ border:none; }
 	padding:2em 0 0 1em;
 }
 
-
-
-article {
-	border-left: 1px solid #E5E5E5;
-	clear: both;
-	display: block;
-	font-family: Lato;
-	font-size: 16px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-	height: 78px;
-	line-height: 26px;
-	margin: 0 auto;
-	padding: 0 250px 60px 70px;
-	position: relative;
-	width: 540px;
-}
-
-article h1 {
-	color: #111;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 1;
-	margin: 0 -250px 0px 0;
-	text-transform: uppercase;
-}
-
-article p {
-	display: block;
-	margin:0;
-}
-
-p.meta.date {
-	font-size: 13px;
-	line-height: 1.1;
-}
-
-p.meta {
-	background: #FFF;
-	left: -32px;
-	line-height: 1.2;
-	position: absolute;
-	text-align: center;
-	text-transform: uppercase;
-	width: 55px;
-}
-
-
-
-
 /* Mobile devices  */
 @media only screen and (max-width: 799px) {
 
@@ -296,7 +238,7 @@ p.meta {
 	#header h2 a{
 		color: #B5B5B5;
 		text-transform: uppercase;
-		font-family: 'SFNewRepublic', 'Quicksand';
+		font-family: 'Quicksand', sans-serif;
 	}
 
 	* {
@@ -600,29 +542,6 @@ p.meta {
 		width: 15em;
 		margin:5px 0;
 	}
-	#respond textarea {
-		width:28em;
-		height:10em;
-		padding:0.25em;
-		margin:5px 0;
-		font-size:1.25em;
-		font-family:Arial, Helvetica, sans-serif;
-	}
-
-	label.text{
-		position:relative;
-		left:0.5em;
-		top:-0.5em;
-	}
-	#respond input#submit {
-		float:right;
-		margin:0;
-		padding:0 0.5em;
-	}
-	.formactions .spinner{
-		float:right;
-		margin:-8px -20px 0 0;
-	}
 
 	/*-----------------------------------------------------------------------------------------------
 	  Ancillary Items
@@ -724,12 +643,11 @@ p.meta {
 
 	#footer{
 		clear:both;
-		color:#939393;
-		padding:1em 0 2em 0;
+		padding:2em 0;
+		font-family: "Quicksand", sans-serif;
 	}
 	#footer .inside{
-		background: #343434; 50% 0 repeat-x;
-		padding:1em 0;
+		background: transparent; 50% 0 repeat-x;
 	}
 	#footer p{
 		margin:0;
@@ -745,8 +663,6 @@ p.meta {
 	#footer p.attributes a:hover{
 		color:#FFF;
 	}
-
-
 
 	img.centered, img.aligncenter {
 		display: block;
@@ -777,40 +693,6 @@ p.meta {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	.wp-caption {
-		border: 1px solid #ddd;
-		text-align: center;
-		background-color: #f3f3f3;
-		padding-top: 4px;
-		margin: 10px;
-		-moz-border-radius: 3px;
-		-khtml-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
-	}
-
-	.wp-caption img {
-		margin: 0;
-		padding: 0;
-		border: 0 none;
-	}
-
-	.wp-caption p.wp-caption-text {
-		font-size: 11px;
-		color: #000;
-		line-height: 17px;
-		padding: 0 4px 5px;
-		margin: 0;
-	}
-
-	.postmetadata {
-		clear: both;
-	}
-
-	.gcsc-branding, .gsc-above-wrapper-area {
-	    display: none;
 	}
 
 }
