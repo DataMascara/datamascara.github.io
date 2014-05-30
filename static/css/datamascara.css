@@ -9,6 +9,7 @@ Tags: black, dark, custom-colors, theme-options, two-columns, fixed-width, rtl-l
 */
 
 @import url("animate.css");
+@import url("font-awesome.css");
 
 /*-----------------------------------------------------------------------------------------------
   Global Styles
@@ -199,6 +200,11 @@ a img{ border:none; }
 		margin:0 2em;
 	}
 
+	#primary .col{
+		margin-left:2em;
+		margin-right:2em;
+	}
+
 	#header h2{
 		font-size:2em;
 		margin:0 0.5em 0 0;
@@ -206,6 +212,27 @@ a img{ border:none; }
 		border: 0px;
 		float:left;
 	}
+
+	#header .acronym ul {
+		padding-left:0;
+	}
+
+	#primary .figure embed,
+    #primary .figure img {
+        display:none;
+    }
+
+    .inside a {
+        color: #96838E;
+    }
+
+    .figure .caption {
+        font-family: "Playfair Display", times, serif;
+        font-weight: 400;
+        font-size: .9em;
+        text-align: center;
+    }
+
 
 	body{
 		margin: 0;
@@ -222,6 +249,12 @@ a img{ border:none; }
 		font-size:1.15em;
 		color:#FFF;
 		font-weight:normal;
+	}
+
+	#footer{
+		margin-bottom:0;
+		padding: 20px 0;
+		margin-top:30px;
 	}
 }
 
@@ -553,7 +586,7 @@ a img{ border:none; }
 		margin-top:50px;
 		overflow: hidden;
 	}
-	
+
 	#primary .col.first{
 		width:230px;
 		padding:10px;

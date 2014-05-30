@@ -4,40 +4,6 @@
     float: right;
 }
 
-#widget_bounds span {
-    font-family: "SFNewRepublic", "Nunito", Arial, sans-serif;
-    font-size: 10pt;
-}
-
-
-/* Mobile devices  */
-@media only screen and (max-width: 799px) {
-
-    .inside .figure embed,
-    .inside .figure img {
-        width: 100%;
-        margin: 25px auto 0px auto;
-        display: block;
-        height: auto;
-        /*border: 1px solid #f0f0f0;*/
-    }
-
-    .inside a {
-        color: #96838E;
-    }
-
-    .figure .caption {
-        font-family: "Playfair Display", times, serif;
-        font-weight: 400;
-        font-size: .9em;
-        text-align: center;
-    }
-
-    #social{
-        width: 100%;
-    }
-}
-
 /* Large devices (800px and up) */
 @media only screen and (min-width: 800px) {
 
@@ -160,8 +126,8 @@
         margin-right: 20px;
     }
 
-    .acronym li a:hover, 
-    .acronym li a:focus, 
+    .acronym li a:hover,
+    .acronym li a:focus,
     .acronym li a:active {
         cursor: pointer;
         color: #FAD0D0;
@@ -180,101 +146,6 @@
         clear: both;
     }
 
-
-
-    .hentry {
-        list-style-type: none;
-        background: #fff;
-        float: left;
-        margin: 10px;
-        padding: 0;
-        position: relative;
-        table-layout:fixed;
-        width: 180px;
-        height: 100px;
-    }
-    .hentry a .attachment-post-thumbnail {
-        /*border-radius: 180px;*/
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -webkit-filter: grayscale(1); /* Older versions of webkit */
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        -ms-filter: grayscale(100%); /* IE 10 */
-        filter: gray; /* IE 9 */
-        filter: url('inc/desaturate.svg#greyscale'); /* Firefox */
-        opacity: .8;
-        -webkit-opacity: .8;
-        -moz-opacity: .8;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    .hentry a:hover img {
-        border-radius: 1px;
-        filter: none;
-        -webkit-filter: none;
-        -moz-filter: none;
-        -o-filter: none;
-        -ms-filter: none;
-        opacity: 1;
-        -webkit-opacity: 1;
-        -moz-opacity: 1;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-        width: 100%;
-        height: 100%;
-    }
-    .hentry.no-thumbnail {
-        background: #BBA4A4;
-        /*border-radius: 180px;*/
-        overflow: hidden;
-        transition: background .4s ease-in-out;
-        -webkit-transition: background .4s ease-in-out;
-        -moz-transition: background .4s ease-in-out;
-        -o-transition: background .4s ease-in-out;
-        word-wrap: break-word;
-        width: 180px;
-        max-width: 180px;
-        height: 100px;
-        max-height: 100px;
-    }
-    .hentry.no-thumbnail span {
-        color: #fff;
-        display: table-cell;
-        font-family: Baskerville, "Playfair Display", "Times New Roman", serif;
-        font-size: 2em;
-        font-style: italic;
-        line-height: 32px;
-        overflow: hidden;
-        text-align: center;
-        transition: background .4s ease-in-out;
-        -webkit-transition: background .4s ease-in-out;
-        -moz-transition: background .4s ease-in-out;
-        -o-transition: background .4s ease-in-out;
-        -ms-transition: background .4s ease-in-out;
-        vertical-align: middle;
-        word-wrap: break-word;
-        width: 180px;
-        height: 100px;
-    }
-    .hentry.no-thumbnail:hover {
-        background: #444;
-        color: #fff;
-        transition: background .4s ease-in-out;
-        -webkit-transition: background .4s ease-in-out;
-        -moz-transition: background .4s ease-in-out;
-        -o-transition: background .4s ease-in-out;
-        -ms-transition: background .4s ease-in-out;
-    }
 
     /* Links */
     a {
