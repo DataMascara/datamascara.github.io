@@ -34,6 +34,13 @@ var MySchedule = React.createClass({
     }];
     return (
         <div>
+            <h2>
+                <i className="fa fa-calendar"></i> Schedule
+            </h2>
+            <p>
+            Every Monday evening, 7-9pm. <br/>
+            Check the <a href="http://www.meetup.com/nycpython/#calendar">NYC Python Calendar</a> for meeting locations.
+            </p>
             <p>
                 <i>{moment(schedule[1].date).fromNow()}</i> - "{schedule[1].topic}"
             </p>
