@@ -10,6 +10,11 @@
         <link rel="stylesheet" type="text/css" href="/static/css/datamascara.css" />
         <link rel="stylesheet" type="text/css" href="/static/css/white.css" />
 
+        <script src="/static/js/moment.min.js"></script>
+        <script src="/static/js/react.js"></script>
+        <script src="/static/js/JSXTransformer.js"></script>
+        <script type="text/jsx" src="/static/js/schedule.js"></script>
+
         <script>
             var _gaq = [['_setAccount', 'UA-51391362-1'], ['_trackPageview']];
             (function(d, t) {
@@ -44,13 +49,12 @@
 
         <div id="primary">
 	    <div class="col first">
-		<h1>Make data pop!</h1>
-		<p>This group focuses on human factors in data science.</p>
-		<p>&nbsp;</p>
+            <div id="description"></div>
 
 		<h2><i class="fa fa-calendar"></i> Schedule</h2>
 		<p>Every Monday evening, 7-9pm. <br/>
 		Check the <a href="http://www.meetup.com/nycpython/#calendar">NYC Python Calendar</a> for meeting locations.</p>
+        <div id="schedule"></div>
 	    </div>
 	    <div class="col">
 		<div class="figure">
