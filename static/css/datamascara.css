@@ -10,6 +10,7 @@ Tags: black, dark, custom-colors, theme-options, two-columns, fixed-width, rtl-l
 
 @import url("animate.css");
 @import url("font-awesome.css");
+@import url("white.css");
 
 /*-----------------------------------------------------------------------------------------------
   Global Styles
@@ -240,14 +241,12 @@ a img{ border:none; }
 	}
 
 	h1{
-		color:#CCC;
 		font-size:1.5em;
 		font-weight:normal;
 	}
 
 	h2, h3{
 		font-size:1.15em;
-		color:#FFF;
 		font-weight:normal;
 	}
 
@@ -296,11 +295,11 @@ a img{ border:none; }
 	}
 
 	a{
-		color:#FFF;
+		cursor: pointer;
+		font-weight: 500;
 	}
 
 	h1{
-		color:#CCC;
 		font-size:1.5em;
 		font-weight:normal;
 		margin:1.5em 0;
@@ -308,11 +307,10 @@ a img{ border:none; }
 
 	h2, h3{
 		font-size:1.15em;
-		color:#FFF;
 		font-weight:normal;
 	}
 	#primary h2{
-		color:#CCC;
+		color:#333;
 	}
 
 	p{
@@ -417,8 +415,6 @@ a img{ border:none; }
 	}
 	.secondary dd a{ color:#808080; }
 	.secondary dd a:hover{ color:#FFF; }
-
-	.single-post h1, .single-post h2{ margin-top:0; }
 
 
 	#primary .inside .post-list li{

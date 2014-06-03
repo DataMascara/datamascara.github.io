@@ -7,71 +7,41 @@
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />
         <title>Data MASCARA</title>
+
         <link rel="stylesheet" type="text/css" href="/static/css/datamascara.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/white.css" />
 
         <script src="/static/js/moment.min.js"></script>
         <script src="/static/js/react.js"></script>
         <script src="/static/js/JSXTransformer.js"></script>
-        <script type="text/jsx" src="/static/js/schedule.js"></script>
 
-        <script>
-            var _gaq = [['_setAccount', 'UA-51391362-1'], ['_trackPageview']];
-            (function(d, t) {
-            var g = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            g.async = true;
-            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g, s);
-            })(document, 'script');
-        </script>
     </head>
     <body>
         <div id="header">
             <div class="inside">
-
                 <h2><a href="/">Data Mascara</a></h2>
-                <div class="links">
-                    &nbsp;
-        		</div>
-                <br />
-                <div class="acronym">
-                    <ul>
-                        <li>Mining</li>
-                        <li>Algorithms</li>
-                        <li>Science</li>
-            			<li>Curation</li>
-                        <li>&</li>
-            			<li>Realtime Analytics</li>
-                    </ul>
-                </div>
+                <div class="links"> &nbsp; </div> <br />
+                <div id="topics" class="acronym"></div>
             </div>
         </div>
 
         <div id="primary">
-	    <div class="col first">
-            <div id="description"></div>
-            <div id="schedule"></div>
-	    </div>
-	    <div class="col">
-		<div class="figure">
-		<img src="/static/images/eye.jpg" alt="" />
-		</div>
-	    </div>
+    	    <div class="col first">
+                <div id="description"></div>
+                <div id="schedule"></div>
+    	    </div>
+    	    <div class="col">
+        		<div class="figure">
+        		  <img src="/static/images/eye.jpg" alt="" />
+        		</div>
+    	    </div>
 		</div>
 
-
-        <div id="footer" style="background-color:#fff">
-            <div class="inside">
-                <div class="widget">
-                    <div class="textwidget">
-                       Designed by <a href="https://plus.google.com/+KatherineChuang?rel=author">Dr. Kat</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="footer" style="background-color:#fff"></div>
     </body>
     <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/ga.js" ></script>
     <script type="text/javascript" src="/static/js/custom.js"></script>
+    <script type="text/jsx" src="/static/js/navigate.js"></script>
+    <script type="text/jsx" src="/static/js/schedule.js"></script>
 
 </html>
