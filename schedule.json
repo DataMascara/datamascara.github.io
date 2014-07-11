@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "date": "2014-06-02 19:00:00",
+      "topic": "Mixer",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-06-09 19:00:00",
+      "topic": "Data Viz Weight Loss",
+      "description": "We'll be looking at several examples of improving presentation of data.",
+      "speakers": []
+    },
+    {
+      "date": "2014-06-16 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-06-22 19:00:00",
+      "topic": "Analyzing rap lyrics",
+      "description": "The topic for this week is about analyzing rap lyrics.. Here are some examples of work we will be looking at: <br /><a href='http://pyvideo.org/video/2658/analyzing-rap-lyrics-with-python'> Analyzing Rap Lyrics with Python</a><br /><a href='http://rappers.mdaniels.com.s3-website-us-east-1.amazonaws.com/'>The Largest Vocabulary in Hip Hop</a>",
+      "speakers": [
+        "Video"
+      ]
+    },
+    {
+      "date": "2014-06-30 19:00:00",
+      "topic": "Show and tell",
+      "description": "Chris Jenkins, a Ph.D. Candidate in experimental psychology from the University of New Mexico will be describing how he got started with scientific programming packages in Python. He'll show us how he's been using IPython Notebook, pandas, matplotlib, and Bokeh to analyze data from his research on differences in rhythmic timing accuracy.",
+      "speakers": [
+        "Chris Jenkins"
+      ]
+    },
+    {
+      "date": "2014-07-07 19:00:00",
+      "topic": "Show and tell",
+      "description": "John Mangual is a jet-setting data scientist tackling public transportation and tourism problems in NYC and Puerto Rico. He'll show us how he's been using IPython Notebook, NumPy, matplotlib to analyze MTA data.",
+      "speakers": [
+        "John Mangual"
+      ]
+    }
+  ]
+}
