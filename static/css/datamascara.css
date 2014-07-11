@@ -674,6 +674,7 @@ a img{ border:none; }
 		clear:both;
 		padding:2em 0;
 		font-family: "Quicksand", sans-serif;
+		background-color: #fff;
 	}
 	#footer .inside{
 		background: transparent; 50% 0 repeat-x;
