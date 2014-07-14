@@ -41,6 +41,14 @@
       "speakers": [
         "John Mangual"
       ]
+    },
+    {
+      "date": "2014-07-14 19:00:00",
+      "topic": "Regular Expressions",
+      "description": "This week's topic is regular expressions. Swing by earlier in the evening to hear the very short introductory talk. <br><br>Bring your computer and pick your dataset. The goal is for all of us to get started collecting data for analysis later in the month. You can choose to scrape a website or an existing dataset. We will practice using regular expressions. You're welcome to use the Python re module or tinker with something fuller like Scrapy or Beautiful Soup.",
+      "speakers": [
+        "Kat Chuang"
+      ]
     }
   ]
 }
