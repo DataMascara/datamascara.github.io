@@ -55,6 +55,42 @@
       "topic": "Study Hall",
       "description": "",
       "speakers": []
+    },
+    {
+      "date": "2014-07-28 19:00:00",
+      "topic": "Charting Most Mentioned Brands in Jay-Z's songs",
+      "description": "We're going to work on recreating a chart published in Vanity Fair that shows the most mentioned brands in Jay-Z songs.",
+      "speakers": ["Kat Chuang"]
+    },
+    {
+      "date": "2014-08-04 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-08-11 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-08-18 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-08-25 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
+    },
+    {
+      "date": "2014-09-08 19:00:00",
+      "topic": "Study Hall",
+      "description": "",
+      "speakers": []
     }
   ]
 }
