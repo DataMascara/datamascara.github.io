@@ -251,10 +251,10 @@ a img{ border:none; }
 	}
 
 	#footer{
-		margin-bottom:0;
-		padding: 20px 0;
-		margin-top:30px;
 		bottom: 0;
+		margin-bottom:0;
+		margin-top:30px;
+		padding: 20px 0;
 		position: fixed;
 		width: 100%;
 	}
@@ -678,6 +678,9 @@ a img{ border:none; }
 		padding:2em 0;
 		font-family: "Quicksand", sans-serif;
 		background-color: #fff;
+		bottom: 0;
+		position: fixed;
+		width: 100%;
 	}
 	#footer .inside{
 		background: transparent; 50% 0 repeat-x;
