@@ -7,6 +7,8 @@ var Attribution = React.createClass({
             <div className="widget">
                 <div className="textwidget">
                    Designed by <a href="https://plus.google.com/+KatherineChuang?rel=author">Dr. Kat</a>
+		   <br />
+	           Made with React.js
                 </div>
             </div>
         </div>
