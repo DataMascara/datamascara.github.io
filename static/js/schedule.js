@@ -13,7 +13,9 @@ var MyDescription = React.createClass({
                 {desc}
             </p>
             <h2>
+                <a href="#schedule">
                 <i className="fa fa-calendar"></i> Schedule
+                </a>
             </h2>
             <p>
             Every Monday evening, 7-9pm. <br/>
