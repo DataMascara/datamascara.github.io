@@ -50,6 +50,53 @@ var RouterMixin = {
   }
 };
 
+var FooComponent = React.createClass({
+  mixins : [RouterMixin],
+  handle : function() {
+    this.props.router.navigate("bar", {
+      trigger : true
+    });
+  },
+  render : function() {
+    var className = "animate-leave animate-leave-active";
+    var displayText = "";
+
+    if (this.props.router.current == "foo") {
+      className = "animate-enter animate-enter-active";
+      displayText = "in foo, <a onClick={this.handle}>go to bar</a>";
+    }
+
+    return (
+      <div className={className}>
+        {displayText}
+      </div>
+    );
+  }
+});
+
+var BarComponent = React.createClass({
+  mixins : [RouterMixin],
+  handle : function() {
+    this.props.router.navigate("foo", {
+      trigger : true
+    });
+  },
+  render : function() {
+    var className = "animate-leave animate-leave-active";
+    var displayText = "";
+
+    if (this.props.router.current == "bar") {
+      className = "animate-enter animate-enter-active";
+      displayText = "in bar, <a onClick={this.handle}>go to foo</a>";
+    }
+
+    return (
+      <div className={className}>
+        {displayText}
+      </div>
+    );
+  }
+});
 
 var ScheduleComponent = React.createClass({
   mixins : [RouterMixin],
@@ -121,6 +168,8 @@ var InterfaceComponent = React.createClass({
 
     return (
       <div className="scheduleList">
+        <FooComponent router={router} />
+        <BarComponent router={router} />
         <ScheduleComponent router={router} url="schedule.json"  />
       </div>
     );
@@ -129,7 +178,15 @@ var InterfaceComponent = React.createClass({
 
 var Router = Backbone.Router.extend({
   routes : {
+    "foo" : "foo",
+    "bar" : "bar",
     "schedule" : "schedule"
+  },
+  foo : function() {
+    this.current = "foo";
+  },
+  bar : function() {
+    this.current = "bar";
   },
   schedule : function() {
     this.current = "schedule";
@@ -149,6 +206,7 @@ React.renderComponent(
   document.getElementById('footer')
 );
 
+// Add an if condition for if it exists
 React.renderComponent(
   <InterfaceComponent router={router} />,
   document.getElementById('rightMain')
