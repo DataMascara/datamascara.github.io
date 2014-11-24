@@ -18,7 +18,6 @@ var MyDescription = React.createClass({
                 </a>
             </h2>
             <p>
-            Every Monday evening, 7-9pm. <br/>
             Check the <a href="http://www.meetup.com/nycpython/#calendar">NYC Python Calendar</a> for meeting locations.
             </p>
         </div>
