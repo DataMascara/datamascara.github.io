@@ -19,10 +19,11 @@ var Attribution = React.createClass({
 
 var DataScienceTopics = React.createClass({
   render: function() {
-    var schedule = ["Mining", "Algorithms", "Science", "Curation", "&", "Realtime Analytics"];
+    var tags = [ "Mining", "Algorithms", "Science", "Curation", "&"
+               , "Realtime Analytics"];
     var items = {};
 
-    schedule.forEach(function(i) {
+    tags.forEach(function(i) {
       items[i] = <li><a href="#">{i}</a></li>;
     });
 
