@@ -3,46 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="author" content="katychuang">
         <meta name="viewport" content="width=device-width">
-        <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />
-        <link rel="shortcut icon" href="favicon.png">
         <title>Data MASCARA</title>
+        <!-- Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2990063-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <link rel="stylesheet" type="text/css" href="/static/css/datamascara.css" />
-        <script src="/static/js/moment.min.js"></script>
-        <script src="/static/js/react.js"></script>
-        <script src="/static/js/JSXTransformer.js"></script>
+  gtag('config', 'UA-51391362-1');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4FGQ9G');</script>
+<!-- End Google Tag Manager -->
+        <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./favicon.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./static/img/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./static/img/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./static/img/apple-touch-icon-76x76png">
+        <link rel="apple-touch-icon" href="./static/img/apple-touch-icon-60x60.png">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i|Open+Sans:300,300i,600&amp;subset=latin-ext" rel="stylesheet">
+        <link href="./static/css/datamascara.css" rel="stylesheet">
+
+        <meta name="application-name" content="datamascara.com">
+        <meta name="msapplication-TileImage" content="">
+        <meta name="msapplication-TileColor" content="#08F">
+        <meta name="author" content="Data MASCARA">
+        <meta name="description" content="Mining, Algorithms, Science, Curation, & Analytics.">
+        <link type="text/plain" rel="author" href="/humans.txt">
 
     </head>
     <body>
-        <div id="header">
-            <div class="inside">
-                <h2><a href="/">Data Mascara</a></h2>
-                <div class="links"> &nbsp; </div> <br />
-                <div id="topics" class="acronym"></div>
-            </div>
-        </div>
-
-        <div id="primary">
-    	    <div class="col first">
-                <div id="description"></div>
-                <div id="schedule"></div>
-    	    </div>
-    	    <div class="col">
-        		<div class="figure" id="rightMain">
-        		</div>
-    	    </div>
-		</div>
-
-        <div id="footer"></div>
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4FGQ9G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div id='app'></div>
+        <script src="mascara.js"></script>
+        <script>
+         /* Elm.Main.embed(document.getElementById('app'))*/
+         var app = Elm.Main.fullscreen(
+             {
+                 width:  window.innerWidth,
+                 height: window.innerHeight
+             }
+         );
+        </script>
     </body>
-    <script type="text/javascript" src="/static/js/jquery.js"></script>
-    <script type="text/javascript" src="/static/js/ga.js" ></script>
-    <script type="text/javascript" src="/static/js/underscore.js"></script>
-    <script type="text/javascript" src="/static/js/backbone-min.js"></script>
-    <script type="text/javascript" src="/static/js/custom.js"></script>
-    <script type="text/jsx" src="/static/js/navigate.js"></script>
-    <script type="text/jsx" src="/static/js/schedule.js"></script>
-
 </html>

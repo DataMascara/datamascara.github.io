@@ -268,7 +268,7 @@ a img{ border:none; }
 		margin:0 0.5em 0 0;
 		padding:0 0.5em 0.25em 0;
 		border-right:1px solid #fff;
-		float:left;
+		/* float:left; */
 	}
 	#header h2 a{
 		color: #B5B5B5;
