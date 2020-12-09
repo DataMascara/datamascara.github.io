@@ -13,17 +13,14 @@ import UrlParser as Url exposing (..)
 
 --------------------------------------------------------------------------------
 -- Routing
-type Route
-    = SectionRoute
-    | PageRoute String
-    | NotFoundRoute
+type Route = SectionRoute | PageRoute String | NotFoundRoute
 
 matchers : Parser (Route -> a) a
 matchers =
-    oneOf
-        [ Url.map SectionRoute top
-        , Url.map PageRoute (Url.string)
-        ]
+  oneOf
+      [ Url.map SectionRoute top
+      , Url.map PageRoute (Url.string)
+      ]
 
 parseLocation : Location -> Route
 parseLocation location =
@@ -134,13 +131,15 @@ metaMenu =
 footerMenu : Html Msg
 footerMenu =
     let
-        year = "2018"
+        year = "2020"
     in
     footer [ id "footer" ] [
         div [class "inside container"] [ div [class "widget"][
             p [ class "h6 mb0" ] [
                  span [ property "innerHTML" (Encode.string "&copy;") ] []
-               , text "2012-2018 Dr Katherine Chuang. All rights reserved. Site designed and coded by Dr Kat with Elm."
+               , text "2012-2020 Dr Katherine Chuang. All rights reserved."
+               , br [] []
+               , text "Site designed and coded by Dr Kat with Elm."
               ]
             ]]]
 
@@ -194,7 +193,7 @@ the same type, i.e., it is a collection of variables of the same type
 
 ### 2. Stacks
 * in this kind of structure, items are push in a first in, last out manner.
-                   """
+"""
         ] ]
        ]
 
@@ -205,16 +204,28 @@ creditPage =
          div [ class "col" ][
               div [ class "article" ] [
                    Markdown.toHtml [ class "content"] """
-# About this site
+# About Data Mascara
 
-This website is created with Elm and hosted on Gitlab Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).
+This is an initiative to encourage cultural diversity amongst a community of practitioners n data science.
+
+## About this site
+
+This website is created with Elm and hosted on GitHub Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).
 
 ## About the author
 
+I am a lecturer of the Department of Computer & Information Science at Brooklyn College of CUNY
+
 Find me on twitter! [@katychuang](http://twitter.com/katychuang)
-                   """
-        ] ]
-       ]
+"""
+              ]
+         ]
+         , div [class "col second"] [
+             div [id "secondary"][
+                text "text"
+             ]
+   ]
+    ]
 
 --------------------------------------------------------------------------------
 

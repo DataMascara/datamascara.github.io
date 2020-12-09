@@ -9938,12 +9938,38 @@ var _user$project$Main$creditPage = A2(
 								_0: _elm_lang$html$Html_Attributes$class('content'),
 								_1: {ctor: '[]'}
 							},
-							'\n# About this site\n\nThis website is created with Elm and hosted on Gitlab Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).\n\n## About the author\n\nFind me on twitter! [@katychuang](http://twitter.com/katychuang)\n                   '),
+							'\n# About Data Mascara\n\nThis is an initiative to encourage cultural diversity amongst a community of practitioners n data science.\n\n## About this site\n\nThis website is created with Elm and hosted on GitHub Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).\n\n## About the author\n\nI am a lecturer of the Department of Computer & Information Science at Brooklyn College of CUNY\n\nFind me on twitter! [@katychuang](http://twitter.com/katychuang)\n'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {ctor: '[]'}
 			}),
-		_1: {ctor: '[]'}
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('col second'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$id('secondary'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('text'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
+		}
 	});
 var _user$project$Main$samplePage = A2(
 	_elm_lang$html$Html$div,
@@ -9979,7 +10005,7 @@ var _user$project$Main$samplePage = A2(
 								_0: _elm_lang$html$Html_Attributes$class('content'),
 								_1: {ctor: '[]'}
 							},
-							'\n# Data Structures\n\n## Intro\n1. Why do we study Data Structures?\n2. What are Data Structures?\n3. What are Algorithms?\n\n## Data Structures\n\n### 1. Arrays\n\n* solves the problem of storing a large number of values and manipulating them\n* is a data structure designed to store a fixed-size sequential collection of elements of\nthe same type, i.e., it is a collection of variables of the same type\n\n### 2. Stacks\n* in this kind of structure, items are push in a first in, last out manner.\n                   '),
+							'\n# Data Structures\n\n## Intro\n1. Why do we study Data Structures?\n2. What are Data Structures?\n3. What are Algorithms?\n\n## Data Structures\n\n### 1. Arrays\n\n* solves the problem of storing a large number of values and manipulating them\n* is a data structure designed to store a fixed-size sequential collection of elements of\nthe same type, i.e., it is a collection of variables of the same type\n\n### 2. Stacks\n* in this kind of structure, items are push in a first in, last out manner.\n'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {ctor: '[]'}
@@ -10074,7 +10100,7 @@ var _user$project$Main$page = function (model) {
 	}
 };
 var _user$project$Main$footerMenu = function () {
-	var year = '2018';
+	var year = '2020';
 	return A2(
 		_elm_lang$html$Html$footer,
 		{
@@ -10124,8 +10150,19 @@ var _user$project$Main$footerMenu = function () {
 										{ctor: '[]'}),
 									_1: {
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('2012-2018 Dr Katherine Chuang. All rights reserved. Site designed and coded by Dr Kat with Elm.'),
-										_1: {ctor: '[]'}
+										_0: _elm_lang$html$Html$text('2012-2020 Dr Katherine Chuang. All rights reserved.'),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$br,
+												{ctor: '[]'},
+												{ctor: '[]'}),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Site designed and coded by Dr Kat with Elm.'),
+												_1: {ctor: '[]'}
+											}
+										}
 									}
 								}),
 							_1: {ctor: '[]'}
