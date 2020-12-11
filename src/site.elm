@@ -151,7 +151,8 @@ notFoundView =
 page : Model -> Html Msg
 page model =
     case model.route of
-        SectionRoute -> loadPage model "Welcome"
+        SectionRoute -> creditPage
+                        --loadPage model "Welcome!"
 
         PageRoute cat ->
             case cat of
@@ -165,8 +166,8 @@ page model =
 loadPage : Model -> String -> Html Msg
 loadPage model cat =
     div [ id "primary" ] [
-          div [ class "col first" ] [ div [ id "description" ] [ ] ]
-        , div [ class "col" ] [ div [ class "figure", id "rightMain" ] [ ] ]
+          div [ class "col first" ] [ div [ id "description" ] [ h1 [] [ text cat ] ] ]
+        , div [ class "col" ] [ div [ class "figure", id "rightMain" ] [ text "" ] ]
     ]
 
 
@@ -201,29 +202,37 @@ the same type, i.e., it is a collection of variables of the same type
 creditPage : Html Msg
 creditPage =
     div [id "primary"] [
-         div [ class "col" ][
+         div [ class "col first" ][
               div [ class "article" ] [
+                   Markdown.toHtml [ class "content"] """
+# Welcome !
+
+"""
+              ]
+         ]
+         , div [class "col second"] [
+            div [ class "figure", id "rightMain" ] [
                    Markdown.toHtml [ class "content"] """
 # About Data Mascara
 
-This is an initiative to encourage cultural diversity amongst a community of practitioners n data science.
+This is an initiative to encourage cultural diversity amongst a community of practitioners in data science.
+
+Here are some featured projects explored by this group.
+
+* Song Lyrics Analysis ([Charts](https://github.com/DataMascara/vanity-fair-charts))
+* Dance Database ([MiMo_Cat](https://github.com/DataMascara/mimo_cat))
 
 ## About this site
 
-This website is created with Elm and hosted on GitHub Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).
+This page is hosted on [GitHub Pages](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).
 
-## About the author
+## About the founder
 
 I am a lecturer of the Department of Computer & Information Science at Brooklyn College of CUNY
 
 Find me on twitter! [@katychuang](http://twitter.com/katychuang)
 """
-              ]
-         ]
-         , div [class "col second"] [
-             div [id "secondary"][
-                text "text"
-             ]
+   ]
    ]
     ]
 

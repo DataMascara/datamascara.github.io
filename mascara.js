@@ -9917,7 +9917,7 @@ var _user$project$Main$creditPage = A2(
 			_elm_lang$html$Html$div,
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('col'),
+				_0: _elm_lang$html$Html_Attributes$class('col first'),
 				_1: {ctor: '[]'}
 			},
 			{
@@ -9938,7 +9938,7 @@ var _user$project$Main$creditPage = A2(
 								_0: _elm_lang$html$Html_Attributes$class('content'),
 								_1: {ctor: '[]'}
 							},
-							'\n# About Data Mascara\n\nThis is an initiative to encourage cultural diversity amongst a community of practitioners n data science.\n\n## About this site\n\nThis website is created with Elm and hosted on GitHub Pages [here](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).\n\n## About the author\n\nI am a lecturer of the Department of Computer & Information Science at Brooklyn College of CUNY\n\nFind me on twitter! [@katychuang](http://twitter.com/katychuang)\n'),
+							'\n# Welcome !\n\n'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {ctor: '[]'}
@@ -9958,12 +9958,23 @@ var _user$project$Main$creditPage = A2(
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$id('secondary'),
-							_1: {ctor: '[]'}
+							_0: _elm_lang$html$Html_Attributes$class('figure'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('rightMain'),
+								_1: {ctor: '[]'}
+							}
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('text'),
+							_0: A2(
+								_evancz$elm_markdown$Markdown$toHtml,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('content'),
+									_1: {ctor: '[]'}
+								},
+								'\n# About Data Mascara\n\nThis is an initiative to encourage cultural diversity amongst a community of practitioners in data science.\n\nFeatured here are some select projects and helpful resources.\n\n* Song Lyrics Analysis ([Charts](https://github.com/DataMascara/vanity-fair-charts))\n* Dance Database ([MiMo_Cat](https://github.com/DataMascara/mimo_cat))\n\n## About this site\n\nThis page is hosted on [GitHub Pages](https://github.com/DataMascara/datamascara.github.io). Any issues may be submitted to the [issue tracker](https://github.com/DataMascara/datamascara.github.io/issues).\n\n## About the founder\n\nI am a lecturer of the Department of Computer & Information Science at Brooklyn College of CUNY\n\nFind me on twitter! [@katychuang](http://twitter.com/katychuang)\n'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
@@ -10039,7 +10050,18 @@ var _user$project$Main$loadPage = F2(
 								_0: _elm_lang$html$Html_Attributes$id('description'),
 								_1: {ctor: '[]'}
 							},
-							{ctor: '[]'}),
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h1,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text(cat),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}),
 						_1: {ctor: '[]'}
 					}),
 				_1: {
@@ -10064,7 +10086,11 @@ var _user$project$Main$loadPage = F2(
 										_1: {ctor: '[]'}
 									}
 								},
-								{ctor: '[]'}),
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(''),
+									_1: {ctor: '[]'}
+								}),
 							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
@@ -10083,7 +10109,7 @@ var _user$project$Main$page = function (model) {
 	var _p0 = model.route;
 	switch (_p0.ctor) {
 		case 'SectionRoute':
-			return A2(_user$project$Main$loadPage, model, 'Welcome');
+			return _user$project$Main$creditPage;
 		case 'PageRoute':
 			var _p2 = _p0._0;
 			var _p1 = _p2;
